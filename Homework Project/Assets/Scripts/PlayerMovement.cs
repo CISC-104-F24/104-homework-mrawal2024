@@ -6,12 +6,15 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; 
     private Rigidbody myRb; 
-    public float jumpForce = 5f; 
+    public float jumpForce = 5f;
+    public float sprintSpeed = 10f; 
+    private float currentSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
         myRb = GetComponent<Rigidbody>();
+        currentSpeed = moveSpeed;
     }
 
     // Update is called once per frame
@@ -35,5 +38,15 @@ public class PlayerMovement : MonoBehaviour
         {
             myRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
-    }  
-}
+        if (Input.GetKey(KeyCode.LeftShift)) // Sprint when holding left shift
+        {
+            currentSpeed = sprintSpeed;
+        }
+        else
+        {
+            currentSpeed = moveSpeed; // Reset to normal speed
+        }
+         myRb.MovePosition(transform.position + movementDirection.normalized * currentSpeed * Time.deltaTime); 
+        }
+       
+    } 
