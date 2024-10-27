@@ -26,14 +26,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W)) // Move forward
             movementDirection += Vector3.forward;
         if (Input.GetKey(KeyCode.S)) // Move backward
-            movementDirection += Vector3.back;
+            movementDirection += -Vector3.forward;
         if (Input.GetKey(KeyCode.A)) // Move left
-            movementDirection += Vector3.left;
+            movementDirection += -Vector3.right;
         if (Input.GetKey(KeyCode.D)) // Move right
             movementDirection += Vector3.right;
 
+        myRb.velocity +=  movementDirection.normalized * moveSpeed * Time.deltaTime;
         // Normalize and move the player
-        myRb.MovePosition(transform.position + movementDirection.normalized * moveSpeed * Time.deltaTime);
+        //myRb.MovePosition(transform.position + movementDirection.normalized * moveSpeed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space)) // Use spacebar for jumping
         {
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = moveSpeed; // Reset to normal speed
         }
 
-        myRb.MovePosition(transform.position + movementDirection.normalized * currentSpeed * Time.deltaTime);
+        //myRb.MovePosition(transform.position + movementDirection.normalized * currentSpeed * Time.deltaTime);
 
         if (Input.GetKey(KeyCode.Q)) // Rotate left
         {
@@ -59,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
         }
     }
+
+
     } 
 
 
