@@ -4220,7 +4220,7 @@ GameObject:
   - component: {fileID: 1069497878}
   m_Layer: 0
   m_Name: Skeleton Head (6)
-  m_TagString: Player
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4393,7 +4393,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069497870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83076317b30a6e42a0424c706775b21, type: 3}
+  m_Script: {fileID: 11500000, guid: 29e7c489f8ac1e443910c3e687e196ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1105720263
@@ -4519,7 +4519,7 @@ GameObject:
   - component: {fileID: 1132254442}
   m_Layer: 0
   m_Name: Skeleton Head (1)
-  m_TagString: Player
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132254434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83076317b30a6e42a0424c706775b21, type: 3}
+  m_Script: {fileID: 11500000, guid: 29e7c489f8ac1e443910c3e687e196ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1142883294
@@ -6120,7 +6120,7 @@ GameObject:
   - component: {fileID: 1397789448}
   m_Layer: 0
   m_Name: Skeleton Head (5)
-  m_TagString: Player
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6293,7 +6293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1397789440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83076317b30a6e42a0424c706775b21, type: 3}
+  m_Script: {fileID: 11500000, guid: 29e7c489f8ac1e443910c3e687e196ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1399989198
@@ -11263,7 +11263,7 @@ GameObject:
   - component: {fileID: 2130369730}
   m_Layer: 0
   m_Name: Skeleton Head (4)
-  m_TagString: Player
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11436,7 +11436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130369722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83076317b30a6e42a0424c706775b21, type: 3}
+  m_Script: {fileID: 11500000, guid: 29e7c489f8ac1e443910c3e687e196ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2135846651
